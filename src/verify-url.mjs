@@ -76,6 +76,7 @@ export default async function verifyUrl (queryUrl) {
       case 'ECONNRESET':
       case 'ECONNREFUSED':
       case 'ENETRESET':
+      case 'ENETUNREACH':
         /**
          *  We don't need to null `responseStatus` because the request did not succeed
          */
