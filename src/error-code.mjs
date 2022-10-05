@@ -1,3 +1,7 @@
+export function getErrorCode ({ code }) {
+  return code
+}
+
 /**
  *  Node/system/non-*nix errors encountered in development
  */

@@ -1,3 +1,11 @@
+export function getResponseStatus ({ status }) {
+  return status
+}
+
+export function isResponseStatusRange (status) {
+  return status > 99 && status < 600
+}
+
 export function isResponseStatusInformationRange (status) {
   return status > 99 && status < 200
 }

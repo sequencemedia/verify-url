@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+import superagent from 'superagent'
 import {
   getResponseStatus,
   isResponseStatusRange,
@@ -12,22 +12,12 @@ import {
   FAIL
 } from '#verification'
 
-const HEAD = {
-  method: 'HEAD',
-  redirect: 'follow',
-  follow: 200,
-  compress: true,
-  size: 0,
-  insecureHTTPParser: true
-}
+const TIMEOUT = 20000
 
-const GET = {
-  method: 'GET',
-  redirect: 'follow',
-  follow: 200,
-  compress: true,
-  size: 0,
-  insecureHTTPParser: true
+const REDIRECTS = 200
+
+function ok (response) {
+  return isResponseStatusRange(getResponseStatus(response))
 }
 
 export default async function verifyUrl (queryUrl) {
@@ -48,7 +38,14 @@ export default async function verifyUrl (queryUrl) {
     /**
      * We're starting with a `HEAD` request
      */
-    const response = await fetch(uri, HEAD)
+    const response = await (
+      superagent
+        .head(uri)
+        .disableTLSCerts()
+        .timeout(TIMEOUT)
+        .redirects(REDIRECTS)
+        .ok(ok)
+    )
     responseStatus = getResponseStatus(response)
 
     if (responseStatus === 405 || responseStatus === 418) {
@@ -61,7 +58,14 @@ export default async function verifyUrl (queryUrl) {
         /*
          * We're changing to a `GET` request
          */
-        const response = await fetch(uri, GET)
+        const response = await (
+          superagent
+            .get(uri)
+            .disableTLSCerts()
+            .timeout(TIMEOUT)
+            .redirects(REDIRECTS)
+            .ok(ok)
+        )
         responseStatus = getResponseStatus(response)
       } catch (e) {
         errorCode = getErrorCode(e)
@@ -84,7 +88,14 @@ export default async function verifyUrl (queryUrl) {
           /*
            * We're changing to a `GET` request
            */
-          const response = await fetch(uri, GET)
+          const response = await (
+            superagent
+              .get(uri)
+              .disableTLSCerts()
+              .timeout(TIMEOUT)
+              .redirects(REDIRECTS)
+              .ok(ok)
+          )
           responseStatus = getResponseStatus(response)
         } catch (e) {
           errorCode = getErrorCode(e)

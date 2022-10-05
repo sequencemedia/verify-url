@@ -37,7 +37,8 @@ const plugins = [
       alias: {
         '#verify-url': './lib/erify-url.cjs',
         '#response-status': './lib/response-status.cjs',
-        '#error-code': './lib/error-code.cjs'
+        '#error-code': './lib/error-code.cjs',
+        '#verification': './lib/verification.cjs'
       }
     }
   ]

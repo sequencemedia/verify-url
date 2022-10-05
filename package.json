@@ -25,7 +25,8 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
-    "node-fetch": "^3.2.10"
+    "node-fetch": "^3.2.10",
+    "superagent": "^8.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
@@ -33,19 +34,20 @@
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.19.3",
     "babel-plugin-minify-dead-code-elimination": "^0.5.2",
-    "eslint-import-resolver-babel-module": "^5.3.1",
     "babel-plugin-module-resolver": "^4.1.0",
     "core-js": "^3.25.3",
+    "cross-env": "^7.0.3",
     "eslint": "^8.24.0",
     "eslint-config-standard": "^17.0.0",
+    "eslint-import-resolver-babel-module": "^5.3.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.1",
-    "cross-env": "^7.0.3"
+    "eslint-plugin-promise": "^6.0.1"
   },
   "imports": {
     "#verify-url": "./src/verify-url.mjs",
     "#response-status": "./src/response-status.mjs",
-    "#error-code": "./src/error-code.mjs"
+    "#error-code": "./src/error-code.mjs",
+    "#verification": "./src/verification.mjs"
   }
 }
