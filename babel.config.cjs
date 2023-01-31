@@ -35,7 +35,7 @@ const plugins = [
       root: ['./src'],
       cwd: 'babelrc',
       alias: {
-        '#verify-url': './lib/erify-url.cjs',
+        '#verify-url': './lib/verify-url.cjs',
         '#response-status': './lib/response-status.cjs',
         '#error-code': './lib/error-code.cjs',
         '#verification': './lib/verification.cjs'
