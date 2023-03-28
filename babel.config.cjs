@@ -22,33 +22,10 @@ const presets = [
   ]
 ]
 
-const plugins = [
-  [
-    'minify-dead-code-elimination',
-    {
-      optimizeRawSize: true
-    }
-  ],
-  [
-    'module-resolver',
-    {
-      root: ['./src'],
-      cwd: 'babelrc',
-      alias: {
-        '#verify-url': './lib/verify-url.cjs',
-        '#response-status': './lib/response-status.cjs',
-        '#error-code': './lib/error-code.cjs',
-        '#verification': './lib/verification.cjs'
-      }
-    }
-  ]
-]
-
 module.exports = (api) => {
   if (api) api.cache.using(env)
 
   return {
-    presets,
-    plugins
+    presets
   }
 }

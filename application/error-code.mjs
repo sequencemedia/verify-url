@@ -1,9 +1,19 @@
+/**
+ * @module '#error-code'
+ */
+
+/**
+ * @function getErrorCode
+ * @description Destructures the error code from an error
+ * @param {Error} error An error
+ * @returns {string} The error code
+ */
 export function getErrorCode ({ code }) {
-  return code
+  return String(code ?? 'UNKNOWN_ERROR')
 }
 
 /**
- *  Node/system/non-*nix errors encountered in development
+ * @description Node/system/non-*nix errors encountered in development
  */
 export const extended = new Set([
   'HPE_INVALID_HEADER_TOKEN',
@@ -14,7 +24,7 @@ export const extended = new Set([
 ])
 
 /**
- * https://man7.org/linux/man-pages/man3/errno.3.html
+ * @link https://man7.org/linux/man-pages/man3/errno.3.html
  */
 export default new Set([
   'E2BIG',

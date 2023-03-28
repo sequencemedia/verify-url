@@ -1,34 +1,85 @@
+/**
+ * @module '#response-status'
+ */
+
+/**
+ * @typedef {import('superagent').Response} SuperAgentResponse
+ */
+
+/**
+ * @function getResponseStatus
+ * @description Destructures the response status from a response
+ * @param {Response | SuperAgentResponse} response A response
+ * @returns {number} The response status
+ */
 export function getResponseStatus ({ status }) {
   return status
 }
 
+/**
+ * @function isResponseStatusRange
+ * @description Determines whether the response status is within the expected range
+ * @param {number | null} status A response status or `null`
+ * @returns {boolean} Whether the status is within the expected range
+ */
 export function isResponseStatusRange (status) {
   return status > 99 && status < 600
 }
 
+/**
+ * @function isResponseStatusInformationRange
+ * @description Determines whether the response status is within the expected range
+ * @param {number | null} status A response status or `null`
+ * @returns {boolean} Whether the status is within the expected range
+ */
 export function isResponseStatusInformationRange (status) {
   return status > 99 && status < 200
 }
 
+/**
+ * @function isResponseStatusSuccessRange
+ * @description Determines whether the response status is within the expected range
+ * @param {number | null} status A response status or `null`
+ * @returns {boolean} Whether the status is within the expected range
+ */
 export function isResponseStatusSuccessRange (status) {
   return status > 199 && status < 300
 }
 
+/**
+ * @function isResponseStatusRedirectionRange
+ * @description Determines whether the response status is within the expected range
+ * @param {number | null} status A response status or `null`
+ * @returns {boolean} Whether the status is within the expected range
+ */
 export function isResponseStatusRedirectionRange (status) {
   return status > 299 && status < 400
 }
 
+/**
+ * @function isResponseStatusClientErrorRange
+ * @description Determines whether the response status is within the expected range
+ * @param {number | null} status A response status or `null`
+ * @returns {boolean} Whether the status is within the expected range
+ */
 export function isResponseStatusClientErrorRange (status) {
   return status > 399 && status < 500
 }
 
+/**
+ * @function isResponseStatusServerErrorRange
+ * @description Determines whether the response status is within the expected range
+ * @param {number | null} status A response status or `null`
+ * @returns {boolean} Whether the status is within the expected range
+ */
 export function isResponseStatusServerErrorRange (status) {
   return status > 499 && status < 600
 }
 
 /**
- * https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+ * @link https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
  *
+ * @description
  * HTTP response status codes
  * HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
  *
