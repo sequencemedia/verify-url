@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/verify-url",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "Verify URLs with Fetch",
   "keywords": [
     "verify",
