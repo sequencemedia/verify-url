@@ -14,7 +14,9 @@
   },
   "overrides": [
     {
-      "files": ["**/*/*.d.mts"],
+      "files": [
+        "**/*/*.d.mts"
+      ],
       "plugins": [
         "@typescript-eslint"
       ],
