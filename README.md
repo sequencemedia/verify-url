@@ -6,7 +6,7 @@ Verifies that a URL is publicly accessible on the network
 
 The `verifyUrl` function returns a Promise which resolves to an object
 
-That object is a _description_, and it has one of three shapes
+That object is a _description_
 
 - It always contains a `verification` string (either `PASS` or `FAIL`)
 - It always contains the `url` string
@@ -42,7 +42,7 @@ The value of `verification` in the description is `FAIL`
 
 ### 3 - The verification request failed
 
-Dispatching a request to this URL generated an error
+Either the `url` was not a valid URL or dispatching a request to it generated an error
 
 - Perhaps the host does not exist
 - Perhaps the host is not reachable
