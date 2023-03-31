@@ -32,8 +32,7 @@ const REDIRECTS = 200
 
 /**
  * @function ok
- * @description Determines whether the `superagent` response status is within an
- * expected range
+ * @description Determines whether the response status is within an expected range
  * @param {SuperAgentResponse} response A `superagent` response
  * @returns {boolean} Whether the status is within the expected range
  */
@@ -46,7 +45,7 @@ function ok (response) {
  * @description Verifies a URL
  * @param {string} queryUrl A URL (as a string)
  * @param {VerifyUrlParams} params Configuration parameters
- * @returns {Promise<RequestFailure|ResponseFailure|ResponseSuccess>} A description of verification for the URL
+ * @returns {Promise<RequestFailure | ResponseFailure | ResponseSuccess>} A description of verification for the URL
  */
 export default async function verifyUrl (queryUrl, { timeout = TIMEOUT, userAgent = USER_AGENT } = {}) {
   let url

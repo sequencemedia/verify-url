@@ -81,7 +81,7 @@ function getParams ({ follow = FOLLOW, userAgent = USER_AGENT }, signal) {
  * @description Verifies a URL
  * @param {string} queryUrl A URL (as a string)
  * @param {VerifyUrlParams} params Configuration parameters
- * @returns {Promise<RequestFailure|ResponseFailure|ResponseSuccess>} A description of verification for the URL
+ * @returns {Promise<RequestFailure | ResponseFailure | ResponseSuccess>} A description of verification for the URL
  */
 export default async function verifyUrl (queryUrl, { timeout = TIMEOUT, ...params } = {}) {
   let url
