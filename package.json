@@ -22,7 +22,8 @@
   },
   "scripts": {
     "lint": "cross-env NODE_ENV=production eslint . --ext .mjs --ext .cjs --ext .mts",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "superagent": "^8.0.9"
@@ -32,6 +33,7 @@
     "@babel/core": "^7.21.3",
     "@babel/eslint-parser": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
+    "@sequencemedia/hooks": "^1.0.370",
     "@types/superagent": "^4.1.16",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@typescript-eslint/parser": "^5.57.0",
@@ -42,7 +44,8 @@
     "eslint-config-standard-with-typescript": "^34.0.1",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.1.1"
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^7.0.0"
   },
   "imports": {
     "#superagent/verify-url": "./application/superagent/verify-url.mjs",
