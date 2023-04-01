@@ -11,3 +11,4 @@
 .eslintrc text eol=lf
 .gitattributes text eol=lf
 .gitignore text eol=lf
+.husky/* text eol=lf
