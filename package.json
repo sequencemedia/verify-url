@@ -26,6 +26,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "nconf": "^0.12.0",
     "superagent": "^8.0.9"
   },
   "devDependencies": {
@@ -48,6 +51,7 @@
     "husky": "^8.0.3"
   },
   "imports": {
+    "#config": "./config/index.mjs",
     "#superagent/verify-url": "./application/superagent/verify-url.mjs",
     "#verify-url": "./application/verify-url.mjs",
     "#response-status": "./application/response-status.mjs",

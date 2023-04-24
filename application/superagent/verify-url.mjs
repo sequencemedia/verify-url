@@ -9,6 +9,14 @@ import superagent from 'superagent'
  * @typedef {import('#superagent/verify-url').VerifyUrlParams} VerifyUrlParams
  */
 
+import debug from 'debug'
+
+import {
+  USER_AGENT,
+  TIMEOUT,
+  FOLLOW as REDIRECTS
+} from '#config'
+
 import {
   getResponseStatus,
   isResponseStatusRange,
@@ -24,11 +32,9 @@ import {
   FAIL
 } from '#verification'
 
-const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'
+const log = debug('@sequencemedia/verify-url')
 
-const TIMEOUT = 5000
-
-const REDIRECTS = 200
+log('`verify-url` is awake')
 
 /**
  * @function ok

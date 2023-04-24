@@ -24,6 +24,14 @@
  * @typedef {DefaultParams & {'User-Agent': string}} RequestParams
  */
 
+import debug from 'debug'
+
+import {
+  USER_AGENT,
+  TIMEOUT,
+  FOLLOW
+} from '#config'
+
 import {
   getResponseStatus,
   isResponseStatusRange,
@@ -39,11 +47,9 @@ import {
   FAIL
 } from '#verification'
 
-const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'
+const log = debug('@sequencemedia/verify-url')
 
-const TIMEOUT = 5000
-
-const FOLLOW = 200 // Number of redirects to follow
+log('`verify-url` is awake')
 
 /**
  * @type {DefaultParams}
