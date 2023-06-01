@@ -2,9 +2,6 @@
 
 node_modules
 
-lib
-experiments
-
 # User-defined NPM configuration
 .npmrc
 

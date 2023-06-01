@@ -32,7 +32,6 @@
     "superagent": "^8.0.9"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.5",
     "@babel/core": "^7.22.1",
     "@babel/eslint-parser": "^7.21.8",
     "@babel/preset-env": "^7.22.4",
@@ -56,6 +55,7 @@
     "#verify-url": "./application/verify-url.mjs",
     "#response-status": "./application/response-status.mjs",
     "#error-code": "./application/error-code.mjs",
-    "#verification": "./application/verification.mjs"
+    "#verification": "./application/verification.mjs",
+    "#where-am-i": "./where-am-i.mjs"
   }
 }

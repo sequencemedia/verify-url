@@ -5,7 +5,7 @@ import {
   join
 } from 'node:path'
 
-import PATH from '../where-am-i.mjs'
+import PATH from '#where-am-i'
 
 const log = debug('@sequencemedia/verify-url')
 const error = debug('@sequencemedia/verify-url:error')
