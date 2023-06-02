@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/verify-url",
-  "version": "1.5.68",
+  "version": "1.5.69",
   "description": "Verify URLs in Node with Fetch or SuperAgent",
   "keywords": [
     "verify",
