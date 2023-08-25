@@ -36,16 +36,16 @@
     "superagent": "^8.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.10",
-    "@babel/eslint-parser": "^7.22.10",
+    "@babel/core": "^7.22.11",
+    "@babel/eslint-parser": "^7.22.11",
     "@babel/preset-env": "^7.22.10",
-    "@sequencemedia/hooks": "^1.0.447",
+    "@sequencemedia/hooks": "^1.0.448",
     "@types/superagent": "^4.1.18",
     "@typescript-eslint/eslint-plugin": "5.61.0",
     "@typescript-eslint/parser": "5.61.0",
     "core-js": "^3.32.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.47.0",
+    "eslint": "^8.48.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-config-standard-with-typescript": "35.0.0",
     "husky": "^8.0.3"
