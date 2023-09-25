@@ -36,10 +36,10 @@
     "superagent": "^8.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.20",
+    "@babel/core": "^7.23.0",
     "@babel/eslint-parser": "^7.22.15",
     "@babel/preset-env": "^7.22.20",
-    "@sequencemedia/hooks": "^1.0.454",
+    "@sequencemedia/hooks": "^1.0.455",
     "@types/superagent": "^4.1.18",
     "@typescript-eslint/eslint-plugin": "5.61.0",
     "@typescript-eslint/parser": "5.61.0",
