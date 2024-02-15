@@ -27,7 +27,7 @@
   "scripts": {
     "lint": "cross-env NODE_ENV=production eslint . --ext .mjs,.cjs,.mts,.cts",
     "lint:fix": "npm run lint -- --fix",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "debug": "^4.3.4",
