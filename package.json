@@ -33,7 +33,7 @@
     "debug": "^4.3.4",
     "dotenv": "^16.4.5",
     "nconf": "^0.12.1",
-    "superagent": "^8.1.2"
+    "superagent": "^9.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
