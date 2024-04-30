@@ -33,16 +33,16 @@
     "debug": "^4.3.4",
     "dotenv": "^16.4.5",
     "nconf": "^0.12.1",
-    "superagent": "^9.0.1"
+    "superagent": "^9.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.4",
-    "@babel/eslint-parser": "^7.24.1",
-    "@babel/preset-env": "^7.24.4",
-    "@sequencemedia/hooks": "^1.0.489",
+    "@babel/core": "^7.24.5",
+    "@babel/eslint-parser": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@sequencemedia/hooks": "^1.0.490",
     "@types/superagent": "^8.1.6",
-    "@typescript-eslint/eslint-plugin": "^7.7.1",
-    "@typescript-eslint/parser": "^7.7.1",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
     "core-js": "^3.37.0",
     "cross-env": "^7.0.3",
     "eslint": "8.57.0",
