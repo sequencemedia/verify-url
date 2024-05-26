@@ -52,11 +52,11 @@
   },
   "imports": {
     "#config": "./config/index.mjs",
-    "#superagent/verify-url": "./application/superagent/verify-url.mjs",
-    "#verify-url": "./application/verify-url.mjs",
-    "#response-status": "./application/response-status.mjs",
     "#error-code": "./application/error-code.mjs",
+    "#response-status": "./application/response-status.mjs",
+    "#superagent/verify-url": "./application/superagent/verify-url.mjs",
     "#verification": "./application/verification.mjs",
+    "#verify-url": "./application/verify-url.mjs",
     "#where-am-i": "./where-am-i.mjs"
   }
 }
