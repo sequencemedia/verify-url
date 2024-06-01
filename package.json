@@ -30,7 +30,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "debug": "^4.3.4",
+    "debug": "^4.3.5",
     "dotenv": "^16.4.5",
     "nconf": "^0.12.1",
     "superagent": "^9.0.2"
@@ -39,7 +39,7 @@
     "@babel/core": "^7.24.6",
     "@babel/eslint-parser": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
-    "@sequencemedia/hooks": "^1.0.493",
+    "@sequencemedia/hooks": "^1.0.494",
     "@types/superagent": "^8.1.7",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
