@@ -25,7 +25,7 @@
     "url": "https://github.com/sequencemedia/verify-url/issues"
   },
   "scripts": {
-    "lint": "cross-env NODE_ENV=production eslint . --ext .mjs,.cjs,.mts,.cts",
+    "lint": "eslint . --ext .mjs,.cjs,.mts,.cts",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky"
   },
@@ -36,13 +36,13 @@
     "superagent": "^9.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/eslint-parser": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
-    "@sequencemedia/hooks": "^1.0.500",
+    "@babel/core": "^7.24.9",
+    "@babel/eslint-parser": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
+    "@sequencemedia/hooks": "^1.0.505",
     "@types/superagent": "^8.1.7",
-    "@typescript-eslint/eslint-plugin": "^7.15.0",
-    "@typescript-eslint/parser": "^7.15.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
     "core-js": "^3.37.1",
     "cross-env": "^7.0.3",
     "eslint": "8.57.0",
