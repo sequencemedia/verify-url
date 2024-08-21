@@ -39,16 +39,16 @@
     "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
     "@babel/preset-env": "^7.25.3",
-    "@sequencemedia/hooks": "^1.0.532",
+    "@sequencemedia/hooks": "^1.0.533",
     "@types/superagent": "^8.1.8",
     "@typescript-eslint/eslint-plugin": "^8.2.0",
     "@typescript-eslint/parser": "^8.2.0",
-    "core-js": "^3.38.0",
+    "core-js": "^3.38.1",
     "cross-env": "^7.0.3",
     "eslint": "8.57.0",
     "eslint-config-love": "47.0.0",
     "eslint-config-standard": "^17.1.0",
-    "husky": "^9.1.4"
+    "husky": "^9.1.5"
   },
   "imports": {
     "#config": "./config/index.mjs",
