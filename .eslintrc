@@ -8,20 +8,5 @@
   },
   "rules": {
     "valid-jsdoc": "warn"
-  },
-  "overrides": [
-    {
-      "files": [
-        "**/*/*.d.mts"
-      ],
-      "plugins": [
-        "@typescript-eslint"
-      ],
-      "extends": "love",
-      "parser": "@typescript-eslint/parser",
-      "globals": {
-        "Response": "readonly"
-      }
-    }
-  ]
+  }
 }
