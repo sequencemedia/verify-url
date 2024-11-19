@@ -47,7 +47,7 @@
     "eslint": "8.57.1",
     "eslint-config-love": "47.0.0",
     "eslint-config-standard": "^17.1.0",
-    "husky": "^9.1.6"
+    "husky": "^9.1.7"
   },
   "imports": {
     "#config": "./config/index.mjs",
