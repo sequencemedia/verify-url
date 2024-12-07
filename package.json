@@ -30,7 +30,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "debug": "^4.3.7",
+    "debug": "^4.4.0",
     "dotenv": "^16.4.7",
     "nconf": "^0.12.1",
     "superagent": "^10.1.1"
