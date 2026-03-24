@@ -31,18 +31,18 @@
   },
   "dependencies": {
     "debug": "^4.4.3",
-    "dotenv": "^17.2.3",
+    "dotenv": "^17.3.1",
     "nconf": "^0.13.0",
     "superagent": "^10.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.5",
-    "@babel/eslint-parser": "^7.28.5",
-    "@babel/preset-env": "^7.28.5",
+    "@babel/core": "^7.29.0",
+    "@babel/eslint-parser": "^7.28.6",
+    "@babel/preset-env": "^7.29.2",
     "@types/superagent": "^8.1.9",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
-    "core-js": "^3.47.0",
+    "core-js": "^3.49.0",
     "cross-env": "^10.1.0",
     "eslint": "8.57.1",
     "eslint-config-love": "47.0.0",
