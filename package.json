@@ -57,5 +57,8 @@
     "#verification": "./application/verification.mjs",
     "#verify-url": "./application/verify-url.mjs",
     "#where-am-i": "./where-am-i.mjs"
+  },
+  "allowScripts": {
+    "core-js@3.51.0": true
   }
 }
